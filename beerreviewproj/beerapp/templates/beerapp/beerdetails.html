@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>{{ prod.beername }}</h2>
+<p>Beer Type: {{ prod.beertype }} </p>
+<p>Added by: {{ prod.user }}</p>
+<p>Entry Date: {{ prod.beerentrydate }}</p>
+<p>URL: {{ prod.beerurl }}</p>
+<p>Description: {{ prod.beerdescription }}</p>
+<p>Price: {{ prod.beerprice }}</p>
+<p>Member discount: {{ discount }}</p>
+<p>No. Of Reviews: {{ reviews }}</p>
+
+{% endblock %}
